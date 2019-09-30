@@ -1,9 +1,20 @@
 export class Todo {
 
-    constructor(
+    public id?: number ;
+    public name: string ;
+    public isComplete: boolean
 
-    public id: number,
-    public title: string ,
-    public complete: boolean
-    ){}
+    constructor(
+     _id: number | undefined ,
+     _name: string ,
+     _isComplete: boolean
+    ){
+     this.id=_id;   
+     this.name=_name;
+     this.isComplete=_isComplete;
+
+    }
+
+    
+
 }
